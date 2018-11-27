@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BookDetailsActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bg_color">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,63 +19,129 @@
             android:layout_height="150dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:id="@+id/bookname"
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:typeface="serif"
-            android:text="Kitap Adı:"/>
-        <TextView
-            android:id="@+id/txtname"
-            android:typeface="serif"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="name"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:text="Book Name: "
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/txtname"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="15dp"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:typeface="serif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yazar Adı:"/>
-        <TextView
-            android:typeface="serif"
-            android:id="@+id/txtauthorname"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="name"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author Name: "
+                android:textSize="17dp"/>
+            <TextView
+                android:typeface="serif"
+                android:id="@+id/txtauthorname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="15dp"/>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:typeface="serif"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Basım Yılı:"/>
-        <TextView
-            android:id="@+id/txtyear"
-            android:typeface="serif"
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="name"/>
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Publication Date: "
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/txtyear"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textSize="15dp"/>
 
-    </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of Pages: "
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/txtnumofpage"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="page"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:typeface="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description: "
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/txtdescription"
+                android:typeface="serif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="page"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>

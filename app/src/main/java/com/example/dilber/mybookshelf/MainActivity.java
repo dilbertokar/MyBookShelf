@@ -8,20 +8,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.CheckBox;
 import android.support.v7.widget.SearchView;
 
 import com.example.dilber.mybookshelf.Retrofit.ApiInterface;
 import com.example.dilber.mybookshelf.Retrofit.ApiUtils;
 
-import com.example.dilber.mybookshelf.Retrofit.Response;
-import com.example.dilber.mybookshelf.Retrofit.Work;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.example.dilber.mybookshelf.Model.Response;
+import com.example.dilber.mybookshelf.Model.Work;
 
 import java.io.IOException;
 import java.util.ArrayList;

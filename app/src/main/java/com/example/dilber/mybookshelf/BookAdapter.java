@@ -10,8 +10,8 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.dilber.mybookshelf.Retrofit.Author;
-import com.example.dilber.mybookshelf.Retrofit.Work;
+import com.example.dilber.mybookshelf.Model.Author;
+import com.example.dilber.mybookshelf.Model.Work;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;

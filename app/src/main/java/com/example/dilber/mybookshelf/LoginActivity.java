@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -28,8 +29,7 @@ public class LoginActivity extends AppCompatActivity {
     private String username,password;
 
     private FirebaseAuth mAuth;
-
-    private String credentials = Credentials.basic("VW6GiLFLp3OB7WvcrATqpg", "5lX8tC8iPn62HP3azv5e1kXych7l1RLR1B2w6ahs");
+    TextView warn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +40,8 @@ public class LoginActivity extends AppCompatActivity {
         login =findViewById(R.id.btnlogin);
         register = findViewById(R.id.btnregister);
         mail = findViewById(R.id.mail);
-        etxtpassword = findViewById(R.id.pasword);
+        etxtpassword = findViewById(R.id.Password);
+        warn = findViewById(R.id.txt_warn);
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser currentUser = mAuth.getCurrentUser();
@@ -60,10 +61,10 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                             startActivity(intent);
 
-
                         }
                         else {
                             Log.e("Giriş Hatası",task.getException().getMessage());
+                            warn.setText("Invalid username or password");
                         }
                     }
                 });

@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +35,7 @@
         <activity android:name=".RegisterActivity" />
         <activity
             android:name=".BookDetailsActivity"
-            android:label="@string/title_activity_book_details"></activity>
+            android:label="@string/title_activity_book_details" />
     </application>
 
 </manifest>
