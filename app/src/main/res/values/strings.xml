@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyBookShelf</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_book_details">BookDetailsActivity</string>
+</resources>

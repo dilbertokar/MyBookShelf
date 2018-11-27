@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "273310063893",
+    "firebase_url": "https://mybookshelf-fb937.firebaseio.com",
+    "project_id": "mybookshelf-fb937",
+    "storage_bucket": "mybookshelf-fb937.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273310063893:android:c0dd0004694e55cb",
+        "android_client_info": {
+          "package_name": "com.example.dilber.mybookshelf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "273310063893-noofauee3em528k10aru5hlkoqdpk4l5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dilber.mybookshelf",
+            "certificate_hash": "cdc5ec8992d87e19219273069ffed9fe66df4a3e"
+          }
+        },
+        {
+          "client_id": "273310063893-nuus428pj07i4es2f48g8dala7mtsipo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwUSUoVyLU8hbNBsU2SMo0zE-YzT0PPhc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273310063893-nuus428pj07i4es2f48g8dala7mtsipo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
