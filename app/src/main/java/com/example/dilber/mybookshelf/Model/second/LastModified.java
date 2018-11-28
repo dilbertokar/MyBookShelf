@@ -1,4 +1,4 @@
-package com.example.dilber.mybookshelf.Model;
+package com.example.dilber.mybookshelf.Model.second;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
